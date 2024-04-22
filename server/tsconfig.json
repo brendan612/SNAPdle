@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "outDir": "./dist",
+    "paths": {
+      "shared/*": ["../shared/lib/*"]
+    },
+    "rootDir": "./src",
+    "target": "ES2021"
+  },
+  "exclude": ["./lib", "**/__tests__"],
+  "extends": "../tsconfig.json",
+  "include": ["./src"]
+}

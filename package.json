@@ -1,0 +1,25 @@
+{
+  "name": "ts-mern-boilerplate",
+  "main": "index.js",
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npx concurrently 'npm run watch -w server' 'npm run watch -w shared' 'npm run watch -w client'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3",
+    "prettier": "^2.5.1",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  }
+}
