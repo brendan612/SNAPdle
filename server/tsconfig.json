@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "nodenext",
-    "outDir": "./dist",
+    "outDir": "./lib",
     "paths": {
       "shared/*": ["../shared/lib/*"]
     },

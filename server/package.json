@@ -4,10 +4,8 @@
   "scripts": {
     "dev": "ts-node-dev --env-file=./.env src/index.ts --transpile-only",
     "watch": "npm run dev",
-    "start": "pm2 start ecosystem.config.json --no-daemon",
-    "start:build": "tsc --build && pm2 start ecosystem.config.json --no-daemon",
-    "compile": "tsc --build",
-    "compile:watch": "tsc --build --watch",
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

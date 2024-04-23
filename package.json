@@ -7,10 +7,15 @@
     "shared"
   ],
   "scripts": {
-    "dev": "npx concurrently \"npm run watch -w server\" \"npm run watch -w shared\" \"npm run watch -w client\""
+    "dev": "npx concurrently \"npm run watch -w server\" \"npm run watch -w shared\" \"npm run watch -w client\"",
+    "build": "npm run build --workspaces --if-present",
+    "start": "node --env-file=server/.env server/lib/index.js"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -24,8 +29,5 @@
   },
   "volta": {
     "node": "20.12.2"
-  },
-  "dependencies": {
-    "sqlite3": "^5.1.7"
   }
 }

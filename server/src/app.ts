@@ -2,8 +2,12 @@ import express, { Express } from 'express';
 import compression from 'compression';
 import cors from 'cors';
 import routes from './routes';
+import { PUBLIC_PATH } from './env';
 
 const app: Express = express();
+
+// serve static files
+app.use(express.static(PUBLIC_PATH));
 
 // enable cors
 app.use(cors());
