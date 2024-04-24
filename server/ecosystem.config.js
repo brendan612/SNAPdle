@@ -6,9 +6,9 @@ module.exports = {
   apps: [
     {
       name: 'beacon',
-      script: 'lib/index.js', // Your entry point
+      script: 'lib/index.js',
       instances: 1,
-      autorestart: true, // THIS is the important part, this will tell PM2 to restart your app if it falls over
+      autorestart: true,
       max_memory_restart: '2G',
       env: {
         npm_package_version: packageJson.version,
